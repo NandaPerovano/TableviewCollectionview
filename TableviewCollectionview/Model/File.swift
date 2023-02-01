@@ -6,6 +6,7 @@
 //
 
 import Foundation
+
 struct DataUser {
     var articulationImage: String
     var articulation: String
