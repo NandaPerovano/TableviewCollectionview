@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3313EE97295B7535007379D0 /* PathologyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3313EE96295B7535007379D0 /* PathologyVC.swift */; };
 		332B44FF2989EC1300B68FFB /* PathologyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B44FE2989EC1300B68FFB /* PathologyScreen.swift */; };
+		335AB4C629A3B0B200954F21 /* UserDetailPathologyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AB4C529A3B0B200954F21 /* UserDetailPathologyTableViewCell.swift */; };
+		335AB4C929A3B52E00954F21 /* UserDetailPathologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335AB4C829A3B52E00954F21 /* UserDetailPathologyView.swift */; };
 		337C8978293CDD2000D12A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C8977293CDD2000D12A5C /* AppDelegate.swift */; };
 		337C897A293CDD2000D12A5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C8979293CDD2000D12A5C /* SceneDelegate.swift */; };
 		337C897C293CDD2000D12A5C /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337C897B293CDD2000D12A5C /* HomeVC.swift */; };
@@ -25,6 +27,8 @@
 		2CA18517579FC435FF39B8C6 /* Pods-TableviewCollectionview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableviewCollectionview.release.xcconfig"; path = "Target Support Files/Pods-TableviewCollectionview/Pods-TableviewCollectionview.release.xcconfig"; sourceTree = "<group>"; };
 		3313EE96295B7535007379D0 /* PathologyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathologyVC.swift; sourceTree = "<group>"; };
 		332B44FE2989EC1300B68FFB /* PathologyScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathologyScreen.swift; sourceTree = "<group>"; };
+		335AB4C529A3B0B200954F21 /* UserDetailPathologyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPathologyTableViewCell.swift; sourceTree = "<group>"; };
+		335AB4C829A3B52E00954F21 /* UserDetailPathologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailPathologyView.swift; sourceTree = "<group>"; };
 		337C8974293CDD2000D12A5C /* TableviewCollectionview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableviewCollectionview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337C8977293CDD2000D12A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337C8979293CDD2000D12A5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,8 +128,10 @@
 		337C898F293CE25600D12A5C /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				337C8990293CE29100D12A5C /* UserDetailTableViewCell.swift */,
 				337C8992293CE31400D12A5C /* UserDetailView.swift */,
+				335AB4C829A3B52E00954F21 /* UserDetailPathologyView.swift */,
+				337C8990293CE29100D12A5C /* UserDetailTableViewCell.swift */,
+				335AB4C529A3B0B200954F21 /* UserDetailPathologyTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -236,12 +242,14 @@
 			files = (
 				337C8991293CE29100D12A5C /* UserDetailTableViewCell.swift in Sources */,
 				337C898E293CDF3900D12A5C /* HomeScreen.swift in Sources */,
+				335AB4C929A3B52E00954F21 /* UserDetailPathologyView.swift in Sources */,
 				337C8996293CE6B500D12A5C /* File.swift in Sources */,
 				337C897C293CDD2000D12A5C /* HomeVC.swift in Sources */,
 				332B44FF2989EC1300B68FFB /* PathologyScreen.swift in Sources */,
 				3313EE97295B7535007379D0 /* PathologyVC.swift in Sources */,
 				337C8978293CDD2000D12A5C /* AppDelegate.swift in Sources */,
 				337C8993293CE31400D12A5C /* UserDetailView.swift in Sources */,
+				335AB4C629A3B0B200954F21 /* UserDetailPathologyTableViewCell.swift in Sources */,
 				337C897A293CDD2000D12A5C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,3 +11,7 @@ struct DataUser {
     var articulationImage: String
     var articulation: String
 }
+
+struct Pathology {
+    var disease: String
+}

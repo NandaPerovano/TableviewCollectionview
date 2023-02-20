@@ -14,7 +14,7 @@ class HomeScreen: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .systemYellow
         label.font = UIFont.boldSystemFont(ofSize: 18)
-        label.text = "Principais patologias das articulações na Fisioterapia"
+        label.text = "Principais patologias das articulações na Fisioterapia Ortopédica"
         label.numberOfLines = 0
         label.textAlignment = .center
         return label

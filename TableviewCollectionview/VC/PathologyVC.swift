@@ -10,6 +10,11 @@ import UIKit
 class PathologyVC: UIViewController {
     
     var pathologyScreen:PathologyScreen?
+    var disease: [Pathology] = [
+        Pathology(disease: "Cervicobraquialgia"),
+        Pathology(disease: "Hérnia de disco"),
+        Pathology(disease: "Espondilite anquilosante")
+    ]
     
     override func loadView() {
         self.pathologyScreen = PathologyScreen()
@@ -18,22 +23,24 @@ class PathologyVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemPink
+       // view.backgroundColor = .white
         self.pathologyScreen?.configTableviewProtocols(delegate: self, datasource: self)
     }
     }
 
     extension PathologyVC:UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 10
+            return disease.count
         }
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            return UITableViewCell()
+            let cell: UserDetailPathologyTableViewCell? = tableView.dequeueReusableCell(withIdentifier: UserDetailPathologyTableViewCell.identifier, for: indexPath) as? UserDetailPathologyTableViewCell
+            cell?.setupCell(pathology: self.disease[indexPath.row])
+            return cell ?? UITableViewCell()
         }
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 140
+            return 100
         }
         
 //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
